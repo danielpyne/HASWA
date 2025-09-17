@@ -3,13 +3,140 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HASWA & Hair Professionals – Embeddable Infographic (UK)</title>
-  <meta name="description" content="How the Health and Safety at Work etc. Act 1974 applies to hair professionals, key regulations under it, and who is responsible for what." />
+  <title>HASWA & Hair Professionals – Infographic</title>
   <style>
-    /* styles omitted for brevity (already in textdoc) */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+      color: #f9fafb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      color: #fbbf24;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      background: #facc15;
+      color: #0f172a;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      color: #a5f3fc;
+    }
+    .footer {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 30px;
+      color: #e2e8f0;
+    }
   </style>
 </head>
 <body>
-  <!-- content omitted for brevity (already in textdoc) -->
+  <div class="container">
+    <h1>Health and Safety at Work Act (HASWA) & Hair Professionals</h1>
+
+    <div class="card">
+      <span class="badge">Core Duties</span>
+      <h2>What HASWA Requires</h2>
+      <h3>Employers must:</h3>
+      <ul>
+        <li>Provide safe equipment and systems of work.</li>
+        <li>Assess and control risks; provide training & supervision.</li>
+        <li>Maintain a safe and healthy salon environment.</li>
+      </ul>
+      <h3>Employees must:</h3>
+      <ul>
+        <li>Take reasonable care of themselves and clients.</li>
+        <li>Follow training and use equipment safely.</li>
+        <li>Report hazards and cooperate with procedures.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="badge">Umbrella</span>
+      <h2>Key Regulations Under HASWA</h2>
+      <ul>
+        <li><strong>MHSWR 1999:</strong> Risk assessment & training.</li>
+        <li><strong>COSHH 2002:</strong> Safe use of hair chemicals.</li>
+        <li><strong>RIDDOR 2013:</strong> Reporting work-related illness/injury.</li>
+        <li><strong>PUWER 1998:</strong> Safe salon equipment use.</li>
+        <li><strong>PPE 1992/2022:</strong> Gloves, aprons, masks.</li>
+        <li><strong>Workplace Regs 1992:</strong> Welfare, ventilation, cleanliness.</li>
+        <li><strong>Manual Handling 1992:</strong> Safe lifting & posture.</li>
+        <li><strong>Electricity at Work 1989:</strong> Safe use of dryers/clippers.</li>
+        <li><strong>Fire Safety Order 2005:</strong> Alarms, evacuation, training.</li>
+        <li><strong>First Aid 1981:</strong> Adequate first aid provision.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="badge">Responsibilities</span>
+      <h2>Who’s Responsible?</h2>
+      <table>
+        <thead>
+          <tr><th>Area</th><th>Employer</th><th>Employee</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chemical Safety (COSHH)</td><td>Provide PPE, safe storage, training.</td><td>Wear PPE, follow safe use.</td></tr>
+          <tr><td>Equipment (PUWER)</td><td>Buy safe kit, maintain, test.</td><td>Check before use, report defects.</td></tr>
+          <tr><td>Workplace</td><td>Provide safe, clean environment.</td><td>Maintain tidiness, follow rules.</td></tr>
+          <tr><td>Accidents (RIDDOR)</td><td>Record & report qualifying cases.</td><td>Report incidents promptly.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> — Informational only, not legal advice.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
